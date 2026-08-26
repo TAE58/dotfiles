@@ -1,0 +1,15 @@
+.DS_Store
+*.swp
+*.tmp
+*~
+**/.cache/
+**/Cache/
+**/GPUCache/
+**/logs/
+**/Cookies*
+**/History*
+**/*token*
+**/*secret*
+**/*credentials*
+**/id_*
+!.gitignore
