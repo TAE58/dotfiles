@@ -5,4 +5,3 @@
 [Behavior]
 # Keep Korean/English state shared across applications.
 ShareInputState=All
-
