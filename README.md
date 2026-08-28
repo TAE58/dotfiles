@@ -2,6 +2,20 @@
 
 Personal configuration files for Omarchy.
 
+## Korean input
+
+On a fresh Omarchy installation, clone this repository and run:
+
+```bash
+./setup-korean.sh
+```
+
+The script installs Fcitx5 with Hangul and its configuration tool, selects the
+Dubeolsik layout, maps right Alt to the Hangul key, shares the input state
+between applications, and enables Wayland IME support in Typora. Existing
+configuration files are backed up before they are linked. Log out and back in
+after setup.
+
 ## Spotify
 
 The Spotify flags enable native Wayland rendering and include the `-no-zygote`
