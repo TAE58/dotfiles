@@ -1,6 +1,14 @@
 [Hotkey/TriggerKeys]
 0=Zenkaku_Hankaku
 1=Hangul
+2=Shift+space
+
+# Try Omarchy sends these when the Mac input source changes.
+[Hotkey/ActivateKeys]
+0=Henkan
+
+[Hotkey/DeactivateKeys]
+0=Muhenkan
 
 [Behavior]
 # Keep Korean/English state shared across applications.

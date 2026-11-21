@@ -16,6 +16,12 @@ between applications, and enables Wayland IME support in Typora and Chrome/Chrom
 configuration files are backed up before they are linked. Log out and back in
 after setup.
 
+Switch between English and Korean with right Alt, Super+I, or Shift+Space. In
+Try Omarchy on a Mac, Caps Lock (the Mac's 한/영 key) also works: the Fcitx
+config keeps the Henkan/Muhenkan keys Try Omarchy sends when the Mac input
+source changes. This needs a Korean input source on the Mac and Accessibility
+permission for Try Omarchy.
+
 ## Spotify
 
 The Spotify flags enable native Wayland rendering and include the `-no-zygote`
