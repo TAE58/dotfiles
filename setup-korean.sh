@@ -37,6 +37,19 @@ link_config "$dotfiles_dir/.config/fcitx5/profile" "$config_dir/fcitx5/profile"
 link_config "$dotfiles_dir/.config/fcitx5/conf/hangul.conf" "$config_dir/fcitx5/conf/hangul.conf"
 link_config "$dotfiles_dir/.config/typora-flags.conf" "$config_dir/typora-flags.conf"
 
+for chrome_flags in "$config_dir/chrome-flags.conf" "$config_dir/chromium-flags.conf"; do
+  [[ -f "$chrome_flags" ]] || continue
+
+  if grep -Fxq -- '--enable-wayland-ime' "$chrome_flags"; then
+    echo "Wayland IME already enabled in: $chrome_flags"
+    continue
+  fi
+
+  cp -- "$chrome_flags" "$chrome_flags.$backup_suffix"
+  printf '%s\n' '--enable-wayland-ime' '--wayland-text-input-version=3' >> "$chrome_flags"
+  echo "Enabled Wayland IME in: $chrome_flags"
+done
+
 hypr_input="$config_dir/hypr/input.lua"
 korean_marker="-- dotfiles: Korean input"
 

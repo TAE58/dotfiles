@@ -12,7 +12,7 @@ On a fresh Omarchy installation, clone this repository and run:
 
 The script installs Fcitx5 with Hangul and its configuration tool, selects the
 Dubeolsik layout, maps right Alt to the Hangul key, shares the input state
-between applications, and enables Wayland IME support in Typora. Existing
+between applications, and enables Wayland IME support in Typora and Chrome/Chromium. Existing
 configuration files are backed up before they are linked. Log out and back in
 after setup.
 
